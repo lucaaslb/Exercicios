@@ -1,0 +1,1 @@
+olá, essa é a solução do exercicio 3 escrevendo em um arquivo txt. 
