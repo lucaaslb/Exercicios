@@ -1,6 +1,6 @@
 import csv
 
-with open('pessoas.csv', 'r') as f:   
+with open('../pessoas.csv', 'r') as f:   
     reader = csv.reader(f, delimiter=',', quoting=csv.QUOTE_NONE)
     next(reader, None) # skip header
 
@@ -24,7 +24,8 @@ with open('pessoas.csv', 'r') as f:
 
         print(row)
 
-    print(masc*100 / lines) #porcentagem de homens
-    print(fem*100 / lines)  #porcentagem de mulheres 
-    print(dMaior)
-    print(dMenor) 
+
+    print(masc*100 / lines, "% são homens" ) #porcentagem de homens
+    print(fem*100 / lines, "% são mulheres")  #porcentagem de mulheres 
+    print(dMaior, 'pessoas maiores de idade.')
+    print(dMenor, 'pessoas menores de idade') 
